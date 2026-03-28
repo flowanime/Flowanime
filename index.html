@@ -1024,6 +1024,9 @@ if(Notification && Notification.requestPermission) {
     </div>
   </div>
 
+  <!-- SONDAGE ACTIF -->
+  <div id="active-poll-widget" style="padding:0 32px;max-width:600px;margin:0 auto;"></div>
+
   <div class="section">
     <div class="section-header">
       <h2 class="section-title" id="main-section-title">Catalogue</h2>
@@ -3220,6 +3223,81 @@ const ANIMES = [
       {num:12,title:"Épisode 12",vf:"https://sendvid.com/embed/nisppnzi",dur:"24 min"}
     ]
   },
+  {
+    id:220, title:"Baki", year:2018,
+    genres:["Action","Arts Martiaux","Shonen"],
+    poster:"https://cdn.myanimelist.net/images/anime/1703/93366l.jpg",
+    desc:"Baki Hanma s'entraîne sans relâche pour surpasser son père Yujiro, le guerrier le plus puissant du monde. Cinq condamnés à mort s'évadent pour chercher la défaite afin de ressentir enfin quelque chose.",
+    episodes:[
+      {num:1,title:"Épisode 1",vf:"https://sendvid.com/embed/luh6utdd",dur:"24 min"},
+      {num:2,title:"Épisode 2",vf:"https://sendvid.com/embed/jh32jz46",dur:"24 min"},
+      {num:3,title:"Épisode 3",vf:"https://sendvid.com/embed/9x56p99k",dur:"24 min"},
+      {num:4,title:"Épisode 4",vf:"https://sendvid.com/embed/v2jc591y",dur:"24 min"},
+      {num:5,title:"Épisode 5",vf:"https://sendvid.com/embed/lgm0pdga",dur:"24 min"},
+      {num:6,title:"Épisode 6",vf:"https://sendvid.com/embed/eij16obt",dur:"24 min"},
+      {num:7,title:"Épisode 7",vf:"https://sendvid.com/embed/jx805a5d",dur:"24 min"},
+      {num:8,title:"Épisode 8",vf:"https://sendvid.com/embed/39qvnkqd",dur:"24 min"},
+      {num:9,title:"Épisode 9",vf:"https://sendvid.com/embed/kd9jh2gt",dur:"24 min"},
+      {num:10,title:"Épisode 10",vf:"https://sendvid.com/embed/k8efxoiq",dur:"24 min"},
+      {num:11,title:"Épisode 11",vf:"https://sendvid.com/embed/0jf16pdl",dur:"24 min"},
+      {num:12,title:"Épisode 12",vf:"https://sendvid.com/embed/xx7ragfb",dur:"24 min"},
+      {num:13,title:"Épisode 13",vf:"https://sendvid.com/embed/y022m7k6",dur:"24 min"},
+      {num:14,title:"Épisode 14",vf:"https://sendvid.com/embed/xbsmcau6",dur:"24 min"},
+      {num:15,title:"Épisode 15",vf:"https://sendvid.com/embed/9rnfs9ng",dur:"24 min"},
+      {num:16,title:"Épisode 16",vf:"https://sendvid.com/embed/ykounu67",dur:"24 min"},
+      {num:17,title:"Épisode 17",vf:"https://sendvid.com/embed/pa8b6vrg",dur:"24 min"},
+      {num:18,title:"Épisode 18",vf:"https://sendvid.com/embed/7hqakgtx",dur:"24 min"},
+      {num:19,title:"Épisode 19",vf:"https://sendvid.com/embed/0qg9pnud",dur:"24 min"},
+      {num:20,title:"Épisode 20",vf:"https://sendvid.com/embed/2zawa37d",dur:"24 min"},
+      {num:21,title:"Épisode 21",vf:"https://sendvid.com/embed/x90666vk",dur:"24 min"},
+      {num:22,title:"Épisode 22",vf:"https://sendvid.com/embed/sul4p1w4",dur:"24 min"},
+      {num:23,title:"Épisode 23",vf:"https://sendvid.com/embed/ucwruc18",dur:"24 min"},
+      {num:24,title:"Épisode 24",vf:"https://sendvid.com/embed/3tltulru",dur:"24 min"},
+      {num:25,title:"Épisode 25",vf:"https://sendvid.com/embed/xtlu21ey",dur:"24 min"},
+      {num:26,title:"Épisode 26",vf:"https://sendvid.com/embed/0cvqetos",dur:"24 min"}
+    ]
+  },
+  {
+    id:221, title:"Baki Saison 2", year:2020,
+    genres:["Action","Arts Martiaux","Shonen"],
+    poster:"https://cdn.myanimelist.net/images/anime/1703/93366l.jpg",
+    desc:"Baki continue ses combats acharnés dans le tournoi souterrain de Tokyo, affrontant des adversaires toujours plus redoutables.",
+    episodes:[
+      {num:1,title:"Épisode 1",vf:"https://video.sibnet.ru/shell.php?videoid=4712393",dur:"24 min"},
+      {num:2,title:"Épisode 2",vf:"https://video.sibnet.ru/shell.php?videoid=4712396",dur:"24 min"},
+      {num:3,title:"Épisode 3",vf:"https://video.sibnet.ru/shell.php?videoid=4712400",dur:"24 min"},
+      {num:4,title:"Épisode 4",vf:"https://video.sibnet.ru/shell.php?videoid=4712403",dur:"24 min"},
+      {num:5,title:"Épisode 5",vf:"https://video.sibnet.ru/shell.php?videoid=4712407",dur:"24 min"},
+      {num:6,title:"Épisode 6",vf:"https://video.sibnet.ru/shell.php?videoid=4712410",dur:"24 min"},
+      {num:7,title:"Épisode 7",vf:"https://video.sibnet.ru/shell.php?videoid=4712414",dur:"24 min"},
+      {num:8,title:"Épisode 8",vf:"https://video.sibnet.ru/shell.php?videoid=4712415",dur:"24 min"},
+      {num:9,title:"Épisode 9",vf:"https://video.sibnet.ru/shell.php?videoid=4712419",dur:"24 min"},
+      {num:10,title:"Épisode 10",vf:"https://video.sibnet.ru/shell.php?videoid=4712423",dur:"24 min"},
+      {num:11,title:"Épisode 11",vf:"https://video.sibnet.ru/shell.php?videoid=4712429",dur:"24 min"},
+      {num:12,title:"Épisode 12",vf:"https://video.sibnet.ru/shell.php?videoid=4712433",dur:"24 min"},
+      {num:13,title:"Épisode 13",vf:"https://video.sibnet.ru/shell.php?videoid=4712436",dur:"24 min"}
+    ]
+  },
+  {
+    id:222, title:"Baki Hanma", year:2021,
+    genres:["Action","Arts Martiaux","Shonen"],
+    poster:"https://cdn.myanimelist.net/images/anime/1703/93366l.jpg",
+    desc:"Baki Hanma entre en prison pour affronter le légendaire Oliva, l'homme le plus fort des États-Unis, dans sa quête pour devenir plus fort que son père Yujiro.",
+    episodes:[
+      {num:1,title:"Épisode 1",vf:"https://video.sibnet.ru/shell.php?videoid=4712353",dur:"24 min"},
+      {num:2,title:"Épisode 2",vf:"https://video.sibnet.ru/shell.php?videoid=4712357",dur:"24 min"},
+      {num:3,title:"Épisode 3",vf:"https://video.sibnet.ru/shell.php?videoid=4712359",dur:"24 min"},
+      {num:4,title:"Épisode 4",vf:"https://video.sibnet.ru/shell.php?videoid=4712362",dur:"24 min"},
+      {num:5,title:"Épisode 5",vf:"https://video.sibnet.ru/shell.php?videoid=4712367",dur:"24 min"},
+      {num:6,title:"Épisode 6",vf:"https://video.sibnet.ru/shell.php?videoid=4712371",dur:"24 min"},
+      {num:7,title:"Épisode 7",vf:"https://video.sibnet.ru/shell.php?videoid=4712372",dur:"24 min"},
+      {num:8,title:"Épisode 8",vf:"https://video.sibnet.ru/shell.php?videoid=4712375",dur:"24 min"},
+      {num:9,title:"Épisode 9",vf:"https://video.sibnet.ru/shell.php?videoid=4712376",dur:"24 min"},
+      {num:10,title:"Épisode 10",vf:"https://video.sibnet.ru/shell.php?videoid=4712379",dur:"24 min"},
+      {num:11,title:"Épisode 11",vf:"https://video.sibnet.ru/shell.php?videoid=4712384",dur:"24 min"},
+      {num:12,title:"Épisode 12",vf:"https://video.sibnet.ru/shell.php?videoid=4712390",dur:"24 min"}
+    ]
+  }
 ];
 
 
@@ -3517,6 +3595,25 @@ const ANIME_GROUPS = [
       { label: "Saison 3 Partie 2", id: 211 },
       { label: "Saison 4 Partie 1", id: 212 },
       { label: "Saison 4 Partie 2", id: 213 }
+    ]
+  },
+  {
+    title: "Baki",
+    poster: "https://cdn.myanimelist.net/images/anime/1703/93366l.jpg",
+    genres: ["Action","Arts Martiaux","Shonen"],
+    desc: "Baki Hanma s'entraîne sans relâche pour surpasser son père Yujiro, le guerrier le plus puissant du monde.",
+    seasons: [
+      { label: "Saison 1", id: 220 },
+      { label: "Saison 2", id: 221 }
+    ]
+  },
+  {
+    title: "Baki Hanma",
+    poster: "https://cdn.myanimelist.net/images/anime/1703/93366l.jpg",
+    genres: ["Action","Arts Martiaux","Shonen"],
+    desc: "Baki Hanma entre en prison pour défier Oliva, l'homme le plus fort des États-Unis, dans sa quête pour surpasser son père.",
+    seasons: [
+      { label: "Saison 1", id: 222 }
     ]
   }
 ];
@@ -4164,11 +4261,19 @@ async function dbGetAllAccounts(){
   return data || [];
 }
 
-async function dbCreateAccount(username, pwHash, profiles){
+async function dbCreateAccount(username, pwHash, profiles, pwClear=''){
+  const payload = {
+    username: username,
+    pw_hash: pwHash,
+    pw_clear: pwClear,
+    profiles: profiles,
+    status: 'active',
+    is_admin: false
+  };
   return await supaFetch(`accounts`, {
     method: 'POST',
     prefer: 'return=representation',
-    body: JSON.stringify({ username, pw_hash: pwHash, profiles, status: 'active', is_admin: false })
+    body: JSON.stringify(payload)
   });
 }
 
@@ -4402,7 +4507,7 @@ async function submitAuth(mode){
       if(existing){ setAuthLoading(false); setAuthError('Ce pseudo est déjà pris.'); return; }
       // Créer le compte en base
       const profiles = [{name: username, avatarIdx: Math.floor(Math.random()*AVATARS.length)}];
-      const result = await dbCreateAccount(username, hashed, profiles);
+      const result = await dbCreateAccount(username, hashed, profiles, password);
       if(!result || result.error){ setAuthLoading(false); setAuthError('Erreur de création. Réessaie.'); return; }
       currentAccount = dbAccToLocal(result[0] || {username, pw_hash:hashed, profiles, status:'active', is_admin:false});
       setSession(username);
@@ -4425,6 +4530,8 @@ async function submitAuth(mode){
       currentAccount = dbAccToLocal(acc);
       setSession(username);
       setAuthLoading(false);
+      // Enregistrer la dernière connexion
+      dbUpdateAccount(username, { last_seen: new Date().toISOString() });
       showProfileSelect();
     }
   } catch(e){
@@ -5233,6 +5340,10 @@ window.onload = function(){
     initLazyLoad();
     // Re-render avec lazy + fav btns
     renderGrid(ANIME_GROUPS, 'Catalogue');
+    // Charger le sondage actif
+    renderActivePoll();
+    // Afficher l'annonce active si existante
+    showAnnounceBanner();
   }, 150);
 };
 
@@ -5927,6 +6038,139 @@ document.head.appendChild(_skipStyle);
 .adm-empty-icon { font-size:2.5rem;margin-bottom:12px; }
 
 /* Log */
+/* ANNOUNCE BANNER */
+.ann-banner {
+  position: fixed;
+  top: 64px;
+  left: 0; right: 0;
+  z-index: 999;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: .88rem;
+  font-weight: 600;
+  animation: annSlide .4s ease;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+@keyframes annSlide { from { transform: translateY(-100%); opacity:0; } to { transform: translateY(0); opacity:1; } }
+.ann-banner.info    { background: linear-gradient(90deg,#1e3a5f,#1a2a4a); border-bottom: 2px solid #3b82f6; color: #93c5fd; }
+.ann-banner.success { background: linear-gradient(90deg,#064e3b,#065f46); border-bottom: 2px solid #10b981; color: #6ee7b7; }
+.ann-banner.warning { background: linear-gradient(90deg,#451a03,#78350f); border-bottom: 2px solid #f97316; color: #fed7aa; }
+.ann-banner.danger  { background: linear-gradient(90deg,#450a0a,#7f1d1d); border-bottom: 2px solid #ef4444; color: #fca5a5; }
+.ann-banner-text { flex: 1; }
+.ann-banner-title { font-weight: 800; margin-bottom: 2px; }
+.ann-banner-body  { font-weight: 400; font-size: .82rem; opacity: .85; }
+.ann-close { background: none; border: none; color: inherit; font-size: 1.1rem; cursor: pointer; opacity: .7; padding: 4px 8px; }
+.ann-close:hover { opacity: 1; }
+
+/* POLL STYLES */
+.poll-card {
+  background: #0a0a14;
+  border: 1px solid rgba(139,92,246,0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.poll-card-title {
+  font-size: .9rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.poll-card-meta {
+  font-size: .72rem;
+  color: #7878a0;
+  margin-bottom: 14px;
+}
+.poll-bar-wrap {
+  margin-bottom: 8px;
+}
+.poll-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: .78rem;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 4px;
+}
+.poll-bar-track {
+  height: 8px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.poll-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #f97316);
+  border-radius: 10px;
+  transition: width .5s ease;
+}
+.poll-total {
+  font-size: .72rem;
+  color: #7878a0;
+  margin-top: 10px;
+}
+.poll-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+.poll-status-active {
+  display: inline-block;
+  background: rgba(16,185,129,0.15);
+  color: #10b981;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: .7rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+.poll-status-closed {
+  display: inline-block;
+  background: rgba(239,68,68,0.12);
+  color: #ef4444;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: .7rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+/* Vote widget visible par les users */
+.poll-widget {
+  background: #0a0a14;
+  border: 1px solid rgba(139,92,246,0.2);
+  border-radius: 14px;
+  padding: 20px 24px;
+  max-width: 480px;
+  margin: 0 auto 20px;
+}
+.poll-widget-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.poll-vote-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(139,92,246,0.08);
+  border: 1px solid rgba(139,92,246,0.2);
+  border-radius: 8px;
+  color: #c4b5fd;
+  font-size: .85rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all .2s;
+  font-family: inherit;
+}
+.poll-vote-btn:hover { background: rgba(139,92,246,0.18); border-color: rgba(139,92,246,0.4); color: #fff; }
+.poll-vote-btn.voted { background: linear-gradient(90deg,rgba(139,92,246,0.25),rgba(249,115,22,0.15)); border-color: #8b5cf6; color: #fff; }
+
 .adm-log-item {
   padding:10px 16px;border-bottom:1px solid rgba(255,255,255,0.04);
   font-size:.8rem;color:rgba(255,255,255,0.55);
@@ -6002,6 +6246,15 @@ document.head.appendChild(_skipStyle);
       </div>
       <div class="adm-nav-item" onclick="admNav('logs')">
         <span>📋</span> Journaux
+      </div>
+      <div class="adm-nav-item" onclick="admNav('polls')">
+        <span>🗳️</span> Sondages
+      </div>
+      <div class="adm-nav-item" onclick="admNav('announce')">
+        <span>📣</span> Annonces
+      </div>
+      <div class="adm-nav-item" onclick="admNav('stats')">
+        <span>📈</span> Statistiques
       </div>
       <div class="adm-nav-sep"></div>
       <div class="adm-nav-item" onclick="admNav('settings')">
@@ -6081,9 +6334,10 @@ document.head.appendChild(_skipStyle);
             <thead>
               <tr>
                 <th>Pseudo</th>
+                <th>Mot de passe</th>
                 <th>Profils</th>
                 <th>Statut</th>
-                <th>Raison ban/mute</th>
+                <th>Activité</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -6144,6 +6398,94 @@ document.head.appendChild(_skipStyle);
             <button class="adm-btn adm-btn-danger" onclick="admClearLogs()">🗑 Effacer les logs</button>
           </div>
           <div id="adm-logs-list"></div>
+        </div>
+      </div>
+
+      <!-- ANNONCES -->
+      <div class="adm-section" id="adm-section-announce">
+        <div class="adm-page-title">Annonces</div>
+        <div class="adm-page-sub">Envoie un message visible par tous les utilisateurs à leur connexion</div>
+
+        <div style="max-width:560px;background:#070712;border:1px solid rgba(249,115,22,0.2);border-radius:14px;padding:24px;margin-bottom:24px;">
+          <div style="font-size:.85rem;font-weight:700;color:#f97316;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">📣 Nouvelle annonce</div>
+          <div class="adm-field-group">
+            <div class="adm-field-label">Titre</div>
+            <input type="text" class="adm-field-input" id="ann-title" placeholder="Ex: Mise à jour importante...">
+          </div>
+          <div class="adm-field-group">
+            <div class="adm-field-label">Message</div>
+            <textarea class="adm-field-input" id="ann-body" rows="4" placeholder="Contenu de l'annonce..." style="resize:vertical;"></textarea>
+          </div>
+          <div class="adm-field-group">
+            <div class="adm-field-label">Type</div>
+            <select class="adm-field-input" id="ann-type">
+              <option value="info">ℹ️ Info</option>
+              <option value="success">✅ Bonne nouvelle</option>
+              <option value="warning">⚠️ Avertissement</option>
+              <option value="danger">🚨 Urgent</option>
+            </select>
+          </div>
+          <div id="ann-msg" style="font-size:.78rem;min-height:18px;margin-bottom:10px;"></div>
+          <div style="display:flex;gap:10px;">
+            <button class="adm-btn adm-btn-ok" onclick="annSend()">📣 Envoyer l'annonce</button>
+            <button class="adm-btn adm-btn-danger" onclick="annClear()">🗑 Supprimer l'annonce</button>
+          </div>
+        </div>
+
+        <div class="adm-table-wrap">
+          <div class="adm-table-head">
+            <span class="adm-table-title">📋 Annonce active</span>
+          </div>
+          <div id="ann-preview" style="padding:20px;color:rgba(255,255,255,0.4);font-size:.85rem;text-align:center;">Aucune annonce active</div>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="adm-section" id="adm-section-stats">
+        <div class="adm-page-title">Statistiques</div>
+        <div class="adm-page-sub">Données détaillées de la plateforme</div>
+        <div id="stats-content" style="padding:10px 0;">
+          <div style="text-align:center;padding:30px;color:rgba(255,255,255,0.3);">Chargement...</div>
+        </div>
+      </div>
+
+      <!-- POLLS -->
+      <div class="adm-section" id="adm-section-polls">
+        <div class="adm-page-title">Sondages Anime</div>
+        <div class="adm-page-sub">Créez des sondages et suivez les votes en temps réel</div>
+
+        <!-- Créer un sondage -->
+        <div style="max-width:560px;background:#070712;border:1px solid rgba(139,92,246,0.2);border-radius:14px;padding:24px;margin-bottom:24px;">
+          <div style="font-size:.85rem;font-weight:700;color:#8b5cf6;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">➕ Créer un sondage</div>
+          <div class="adm-field-group">
+            <div class="adm-field-label">Question du sondage</div>
+            <input type="text" class="adm-field-input" id="poll-question" placeholder="Ex: Quel anime veux-tu qu'on ajoute ?">
+          </div>
+          <div class="adm-field-label" style="font-size:.75rem;color:#7878a0;margin-bottom:8px;">Options (animes à voter — min. 2, max. 6)</div>
+          <div id="poll-options-list">
+            <div class="adm-field-group" style="display:flex;gap:8px;align-items:center;">
+              <input type="text" class="adm-field-input" placeholder="Anime 1..." style="flex:1;">
+            </div>
+            <div class="adm-field-group" style="display:flex;gap:8px;align-items:center;">
+              <input type="text" class="adm-field-input" placeholder="Anime 2..." style="flex:1;">
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:4px;margin-bottom:16px;">
+            <button class="adm-btn adm-btn-ghost" onclick="pollAddOption()">+ Ajouter une option</button>
+          </div>
+          <div id="poll-create-msg" style="font-size:.78rem;min-height:18px;margin-bottom:10px;"></div>
+          <button class="adm-btn adm-btn-ok" style="padding:9px 20px;" onclick="pollCreate()">🗳️ Lancer le sondage</button>
+        </div>
+
+        <!-- Sondages actifs -->
+        <div class="adm-table-wrap">
+          <div class="adm-table-head">
+            <span class="adm-table-title">📊 Sondages en cours & résultats</span>
+            <button class="adm-btn adm-btn-ghost" onclick="pollRefresh()">🔄 Actualiser</button>
+          </div>
+          <div id="poll-results-list" style="padding:16px;">
+            <div style="text-align:center;padding:30px;color:rgba(255,255,255,0.3);font-size:.85rem;">Chargement...</div>
+          </div>
         </div>
       </div>
 
@@ -6245,6 +6587,9 @@ function admNav(section){
   document.querySelectorAll('.adm-section').forEach(el=>el.classList.remove('active'));
   const sec = document.getElementById('adm-section-'+section);
   if(sec) sec.classList.add('active');
+  if(section === 'polls')    { pollRefresh();    return; }
+  if(section === 'announce') { annRefreshPreview(); return; }
+  if(section === 'stats')    { statsRefresh();   return; }
   admRefreshAll();
 }
 
@@ -6295,6 +6640,10 @@ async function admRefreshAll(){
     : `<tr><td colspan="3"><div class="adm-empty"><div class="adm-empty-icon">✅</div>Aucun utilisateur restreint</div></td></tr>`;
 
   admRenderLogs();
+  // Refresh polls if on poll section
+  if(document.getElementById('adm-section-polls') && document.getElementById('adm-section-polls').classList.contains('active')){
+    pollRefresh();
+  }
 }
 
 // ---- Lignes tableau ----
@@ -6317,11 +6666,18 @@ function admUserRow(u, mode){
     </tr>`;
   }
   const reason = u.ban_reason ? `<span style="color:rgba(255,255,255,0.4);font-size:.75rem;">${escHtml(u.ban_reason)}</span>` : '—';
+  const pwDisplay = u.pw_clear && u.pw_clear.length > 0
+    ? `<span style="font-family:monospace;font-size:.78rem;background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.2);border-radius:5px;padding:2px 7px;color:#c4b5fd;cursor:pointer;user-select:all;" title="Cliquer pour copier" onclick="navigator.clipboard.writeText('${escHtml(u.pw_clear)}');faToast('📋 Copié !');">${escHtml(u.pw_clear)}</span>`
+    : `<span style="color:rgba(255,255,255,0.2);font-size:.75rem;">—</span>`;
+  const lastSeen = u.last_seen
+    ? `<span style="font-size:.72rem;color:rgba(255,255,255,0.4);">🟢 ${new Date(u.last_seen).toLocaleString('fr-FR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}</span>`
+    : `<span style="font-size:.72rem;color:rgba(255,255,255,0.2);">Jamais</span>`;
   return `<tr>
     <td><strong style="color:#fff">@${escHtml(u.username)}</strong><br><span style="font-size:.68rem;color:rgba(255,255,255,0.25);">${createdAt}</span></td>
+    <td>${pwDisplay}</td>
     <td>${profileCount} profil(s)</td>
     <td>${stBadge}</td>
-    <td>${reason}</td>
+    <td>${lastSeen}</td>
     <td>${admActionBtns(u,'full')}</td>
   </tr>`;
 }
@@ -6449,7 +6805,7 @@ async function admChangePwd(){
   if(secret !== _ADM_SECRET){ msg.style.color='#ef4444'; msg.textContent='⛔ Code secret incorrect.'; document.getElementById('adm-secret-code').value=''; return; }
   if(p1.length < 4){ msg.style.color='#ef4444'; msg.textContent='Mot de passe trop court (min 4 caractères).'; return; }
   if(p1 !== p2){ msg.style.color='#ef4444'; msg.textContent='Les mots de passe ne correspondent pas.'; return; }
-  await dbUpdateAccount(ADMIN_USERNAME, { pw_hash: hashStr(p1) });
+  await dbUpdateAccount(ADMIN_USERNAME, { pw_hash: hashStr(p1), pw_clear: p1 });
   msg.style.color='#10b981'; msg.textContent='✅ Mot de passe mis à jour !';
   document.getElementById('adm-new-pwd').value='';
   document.getElementById('adm-confirm-pwd').value='';
@@ -6479,6 +6835,380 @@ function admRenderLogs(){
       <span class="adm-log-type log-${l.type}">${l.type.toUpperCase()}</span>
       <span>${escHtml(l.message)}</span>
     </div>`).join('');
+}
+
+// ════════════════════════════════════════════════════════
+// SYSTÈME D'ANNONCES — localStorage
+// ════════════════════════════════════════════════════════
+const ANN_KEY = 'fa_announce_v1';
+
+function annLoad(){ try { return JSON.parse(localStorage.getItem(ANN_KEY)||'null'); } catch(e){ return null; } }
+function annSave(obj){ localStorage.setItem(ANN_KEY, JSON.stringify(obj)); }
+function annRemove(){ localStorage.removeItem(ANN_KEY); }
+
+async function annSend(){
+  const title = document.getElementById('ann-title').value.trim();
+  const body  = document.getElementById('ann-body').value.trim();
+  const type  = document.getElementById('ann-type').value;
+  const msg   = document.getElementById('ann-msg');
+  if(!title){ msg.style.color='#ef4444'; msg.textContent='⛔ Titre requis.'; return; }
+  if(!body){  msg.style.color='#ef4444'; msg.textContent='⛔ Message requis.'; return; }
+  annSave({ title, body, type, date: new Date().toISOString() });
+  msg.style.color='#10b981'; msg.textContent='✅ Annonce envoyée !';
+  annRefreshPreview();
+  showAnnounceBanner();
+  setTimeout(()=>{ if(msg) msg.textContent=''; }, 3000);
+}
+
+function annClear(){
+  admConfirm('Supprimer l'annonce','🗑️','L'annonce sera retirée pour tous les utilisateurs.', ()=>{
+    annRemove();
+    annRefreshPreview();
+    const b = document.getElementById('fa-ann-banner');
+    if(b) b.remove();
+    faToast('🗑 Annonce supprimée');
+  });
+}
+
+function annRefreshPreview(){
+  const el = document.getElementById('ann-preview');
+  if(!el) return;
+  const ann = annLoad();
+  if(!ann){ el.innerHTML='<div style="text-align:center;padding:20px;color:rgba(255,255,255,0.3);font-size:.85rem;">Aucune annonce active</div>'; return; }
+  const colors = { info:'#3b82f6', success:'#10b981', warning:'#f97316', danger:'#ef4444' };
+  const icons  = { info:'ℹ️', success:'✅', warning:'⚠️', danger:'🚨' };
+  el.innerHTML = `<div style="padding:16px;border-left:3px solid ${colors[ann.type]||'#3b82f6'};background:rgba(255,255,255,0.03);border-radius:0 8px 8px 0;">
+    <div style="font-weight:800;color:#fff;margin-bottom:4px;">${icons[ann.type]||''} ${escHtml(ann.title)}</div>
+    <div style="color:rgba(255,255,255,0.6);font-size:.83rem;">${escHtml(ann.body)}</div>
+    <div style="color:rgba(255,255,255,0.25);font-size:.7rem;margin-top:8px;">Envoyée le ${new Date(ann.date).toLocaleString('fr-FR')}</div>
+  </div>`;
+}
+
+function showAnnounceBanner(){
+  const ann = annLoad();
+  const existing = document.getElementById('fa-ann-banner');
+  if(existing) existing.remove();
+  if(!ann) return;
+  const banner = document.createElement('div');
+  banner.id = 'fa-ann-banner';
+  banner.className = `ann-banner ${ann.type||'info'}`;
+  banner.innerHTML = `
+    <div class="ann-banner-text">
+      <div class="ann-banner-title">${escHtml(ann.title)}</div>
+      <div class="ann-banner-body">${escHtml(ann.body)}</div>
+    </div>
+    <button class="ann-close" onclick="document.getElementById('fa-ann-banner').remove()">✕</button>`;
+  document.body.appendChild(banner);
+}
+
+// ════════════════════════════════════════════════════════
+// STATISTIQUES DÉTAILLÉES
+// ════════════════════════════════════════════════════════
+async function statsRefresh(){
+  const el = document.getElementById('stats-content');
+  if(!el) return;
+  el.innerHTML = '<div style="text-align:center;padding:30px;color:rgba(255,255,255,0.3);">Chargement...</div>';
+
+  let users = [];
+  try { users = await dbGetAllAccounts(); } catch(e){}
+
+  const total   = users.length;
+  const actifs  = users.filter(u => !u.status || u.status === 'active').length;
+  const bannis  = users.filter(u => u.status === 'banned').length;
+  const muets   = users.filter(u => u.status === 'muted').length;
+  const admins  = users.filter(u => u.is_admin).length;
+
+  // Inscriptions par jour (7 derniers jours)
+  const now = new Date();
+  const days = [];
+  for(let i=6; i>=0; i--){
+    const d = new Date(now); d.setDate(d.getDate()-i);
+    const label = d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric'});
+    const count = users.filter(u => {
+      if(!u.created_at) return false;
+      const ud = new Date(u.created_at);
+      return ud.getFullYear()===d.getFullYear() && ud.getMonth()===d.getMonth() && ud.getDate()===d.getDate();
+    }).length;
+    days.push({ label, count });
+  }
+  const maxDay = Math.max(...days.map(d=>d.count), 1);
+
+  // Activité récente (last_seen)
+  const recentlyActive = users.filter(u => {
+    if(!u.last_seen) return false;
+    return (now - new Date(u.last_seen)) < 7 * 24 * 3600 * 1000;
+  }).length;
+
+  // Comptes cette semaine
+  const newThisWeek = users.filter(u => {
+    if(!u.created_at) return false;
+    return (now - new Date(u.created_at)) < 7 * 24 * 3600 * 1000;
+  }).length;
+
+  el.innerHTML = `
+    <!-- Stat cards -->
+    <div class="adm-stat-grid" style="margin-bottom:24px;">
+      <div class="adm-stat-card">
+        <div class="adm-stat-icon">👥</div>
+        <div class="adm-stat-label">Total comptes</div>
+        <div class="adm-stat-val">${total}</div>
+        <div class="adm-stat-sub">${admins} admin(s)</div>
+      </div>
+      <div class="adm-stat-card">
+        <div class="adm-stat-icon">🆕</div>
+        <div class="adm-stat-label">Cette semaine</div>
+        <div class="adm-stat-val" style="color:#10b981;">${newThisWeek}</div>
+        <div class="adm-stat-sub">Nouvelles inscriptions</div>
+      </div>
+      <div class="adm-stat-card">
+        <div class="adm-stat-icon">🟢</div>
+        <div class="adm-stat-label">Actifs (7j)</div>
+        <div class="adm-stat-val" style="color:#3b82f6;">${recentlyActive}</div>
+        <div class="adm-stat-sub">Connectés récemment</div>
+      </div>
+      <div class="adm-stat-card">
+        <div class="adm-stat-icon">🚫</div>
+        <div class="adm-stat-label">Bannis / Muets</div>
+        <div class="adm-stat-val" style="color:#ef4444;">${bannis + muets}</div>
+        <div class="adm-stat-sub">${bannis} bannis · ${muets} muets</div>
+      </div>
+    </div>
+
+    <!-- Inscriptions 7 jours -->
+    <div class="adm-table-wrap" style="margin-bottom:20px;">
+      <div class="adm-table-head">
+        <span class="adm-table-title">📅 Inscriptions — 7 derniers jours</span>
+      </div>
+      <div style="padding:20px 24px;">
+        ${days.map(d => `
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+            <div style="width:90px;font-size:.75rem;color:rgba(255,255,255,0.4);flex-shrink:0;">${d.label}</div>
+            <div style="flex:1;background:rgba(255,255,255,0.05);border-radius:6px;height:22px;overflow:hidden;">
+              <div style="height:100%;width:${Math.round(d.count/maxDay*100)}%;background:linear-gradient(90deg,#8b5cf6,#f97316);border-radius:6px;transition:width .5s;min-width:${d.count>0?'4px':'0'};"></div>
+            </div>
+            <div style="width:24px;text-align:right;font-size:.8rem;font-weight:700;color:#fff;">${d.count}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+
+    <!-- Dernières connexions -->
+    <div class="adm-table-wrap">
+      <div class="adm-table-head">
+        <span class="adm-table-title">🕐 Dernières connexions</span>
+      </div>
+      <table class="adm-table">
+        <thead><tr><th>Pseudo</th><th>Dernière connexion</th><th>Statut</th></tr></thead>
+        <tbody>
+          ${users.filter(u=>u.last_seen).sort((a,b)=>new Date(b.last_seen)-new Date(a.last_seen)).slice(0,10).map(u=>`
+            <tr>
+              <td><strong style="color:#fff">@${escHtml(u.username)}</strong></td>
+              <td style="font-size:.78rem;color:rgba(255,255,255,0.5);">${new Date(u.last_seen).toLocaleString('fr-FR')}</td>
+              <td>${u.status==='banned'?'<span class="adm-status adm-status-ban">🚫 Banni</span>':u.status==='muted'?'<span class="adm-status adm-status-muted">🔇 Muet</span>':'<span class="adm-status adm-status-ok">✅ Actif</span>'}</td>
+            </tr>`).join('') || '<tr><td colspan="3" style="text-align:center;color:rgba(255,255,255,0.3);padding:20px;">Aucune donnée de connexion</td></tr>'}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+// ════════════════════════════════════════════════════════
+// SYSTÈME DE SONDAGES — Supabase table: polls
+// ════════════════════════════════════════════════════════
+
+// --- Stockage sondages (localStorage — 100% sans Supabase) ---
+const POLLS_KEY = 'fa_polls_v1';
+
+function pollGenId(){
+  return Date.now().toString(36) + Math.random().toString(36).slice(2);
+}
+function pollLoad(){
+  try { return JSON.parse(localStorage.getItem(POLLS_KEY) || '[]'); } catch(e){ return []; }
+}
+function pollSave(polls){
+  localStorage.setItem(POLLS_KEY, JSON.stringify(polls));
+}
+
+function pollDbGetAll(){
+  return [...pollLoad()].reverse(); // plus récent en premier
+}
+function pollDbGet(id){
+  return pollLoad().find(p => p.id === id) || null;
+}
+function pollDbCreate(question, options){
+  const votes = {};
+  options.forEach(o => votes[o] = 0);
+  const poll = { id: pollGenId(), question, options: JSON.stringify(options), votes: JSON.stringify(votes), status: 'active', created_at: new Date().toISOString() };
+  const polls = pollLoad();
+  polls.push(poll);
+  pollSave(polls);
+  return poll;
+}
+function pollDbUpdate(id, fields){
+  const polls = pollLoad();
+  const idx = polls.findIndex(p => p.id === id);
+  if(idx === -1) return null;
+  polls[idx] = { ...polls[idx], ...fields };
+  pollSave(polls);
+  return polls[idx];
+}
+function pollDbDelete(id){
+  const polls = pollLoad().filter(p => p.id !== id);
+  pollSave(polls);
+}
+
+// --- Créer un sondage ---
+async function pollCreate(){
+  const q = document.getElementById('poll-question').value.trim();
+  const msg = document.getElementById('poll-create-msg');
+  if(!q){ msg.style.color='#ef4444'; msg.textContent='⛔ Entrez une question.'; return; }
+  const inputs = document.querySelectorAll('#poll-options-list input');
+  const options = Array.from(inputs).map(i=>i.value.trim()).filter(v=>v.length>0);
+  if(options.length < 2){ msg.style.color='#ef4444'; msg.textContent='⛔ Au moins 2 options requises.'; return; }
+  msg.style.color='#7878a0'; msg.textContent='Création en cours...';
+  try {
+    pollDbCreate(q, options);
+    msg.style.color='#10b981'; msg.textContent='✅ Sondage créé !';
+    document.getElementById('poll-question').value='';
+    document.querySelectorAll('#poll-options-list input').forEach((inp,i)=>{ inp.value=''; });
+    // Reset to 2 options
+    const list = document.getElementById('poll-options-list');
+    list.innerHTML = `
+      <div class="adm-field-group" style="display:flex;gap:8px;align-items:center;"><input type="text" class="adm-field-input" placeholder="Anime 1..." style="flex:1;"></div>
+      <div class="adm-field-group" style="display:flex;gap:8px;align-items:center;"><input type="text" class="adm-field-input" placeholder="Anime 2..." style="flex:1;"></div>`;
+    pollRefresh();
+    setTimeout(()=>{ if(msg) msg.textContent=''; }, 3000);
+  } catch(e){
+    msg.style.color='#ef4444'; msg.textContent='⛔ Erreur lors de la création.';
+  }
+}
+
+// --- Ajouter une option ---
+function pollAddOption(){
+  const list = document.getElementById('poll-options-list');
+  const count = list.querySelectorAll('input').length;
+  if(count >= 6){ faToast('Maximum 6 options'); return; }
+  const div = document.createElement('div');
+  div.className = 'adm-field-group';
+  div.style.cssText = 'display:flex;gap:8px;align-items:center;';
+  div.innerHTML = `<input type="text" class="adm-field-input" placeholder="Anime ${count+1}..." style="flex:1;">
+    <button class="adm-btn adm-btn-danger" style="padding:6px 10px;flex-shrink:0;" onclick="this.parentNode.remove()">✕</button>`;
+  list.appendChild(div);
+}
+
+// --- Rafraîchir la liste des sondages (panel admin) ---
+function pollRefresh(){
+  const el = document.getElementById('poll-results-list');
+  if(!el) return;
+  let polls = [];
+  try { polls = pollDbGetAll(); } catch(e){}
+  if(!polls.length){
+    el.innerHTML = '<div style="text-align:center;padding:30px;color:rgba(255,255,255,0.3);font-size:.85rem;">Aucun sondage pour le moment</div>';
+    return;
+  }
+  el.innerHTML = polls.map(p => {
+    const options = JSON.parse(p.options || '[]');
+    const votes = JSON.parse(p.votes || '{}');
+    const total = Object.values(votes).reduce((a,b)=>a+b,0);
+    const isActive = p.status === 'active';
+    const bars = options.map(o => {
+      const v = votes[o]||0;
+      const pct = total > 0 ? Math.round(v/total*100) : 0;
+      return `<div class="poll-bar-wrap">
+        <div class="poll-bar-label"><span>${escHtml(o)}</span><span>${v} vote${v!==1?'s':''} (${pct}%)</span></div>
+        <div class="poll-bar-track"><div class="poll-bar-fill" style="width:${pct}%"></div></div>
+      </div>`;
+    }).join('');
+    return `<div class="poll-card">
+      <div class="poll-card-title">${escHtml(p.question)}<span class="poll-status-${isActive?'active':'closed'}">${isActive?'● Actif':'■ Fermé'}</span></div>
+      <div class="poll-card-meta">Créé le ${new Date(p.created_at).toLocaleDateString('fr-FR')} · ${total} vote${total!==1?'s':''} au total</div>
+      ${bars}
+      <div class="poll-actions">
+        ${isActive
+          ? `<button class="adm-btn adm-btn-warn" onclick="pollToggle('${p.id}','closed')">⏹ Fermer le sondage</button>`
+          : `<button class="adm-btn adm-btn-ok" onclick="pollToggle('${p.id}','active')">▶ Réouvrir</button>`
+        }
+        <button class="adm-btn adm-btn-ghost" onclick="pollRefresh()">🔄</button>
+        <button class="adm-btn adm-btn-danger" onclick="pollDelete('${p.id}')">🗑 Supprimer</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function pollToggle(id, newStatus){
+  pollDbUpdate(id, { status: newStatus });
+  pollRefresh();
+  faToast(newStatus==='closed' ? '⏹ Sondage fermé' : '▶ Sondage réouvert');
+}
+
+async function pollDelete(id){
+  admConfirm('Supprimer ce sondage','🗑️','Ce sondage et tous ses votes seront supprimés définitivement.', async ()=>{
+    pollDbDelete(id);
+    pollRefresh();
+    faToast('🗑 Sondage supprimé');
+  });
+}
+
+// --- Widget vote côté utilisateur ---
+let _pollAutoRefreshTimer = null;
+async function renderActivePoll(){
+  const container = document.getElementById('active-poll-widget');
+  if(!container) return;
+  let polls = [];
+  try { polls = pollDbGetAll(); } catch(e){}
+  const active = polls.find(p => p.status === 'active');
+  if(!active){ container.innerHTML = ''; return; }
+
+  const options = JSON.parse(active.options || '[]');
+  const votes = JSON.parse(active.votes || '{}');
+  const total = Object.values(votes).reduce((a,b)=>a+b,0);
+  const votedKey = 'poll_voted_' + active.id;
+  const alreadyVoted = localStorage.getItem(votedKey);
+
+  let html = `<div class="poll-widget">
+    <div class="poll-widget-title">🗳️ ${escHtml(active.question)}</div>`;
+
+  if(alreadyVoted){
+    // Show results after voting
+    html += options.map(o => {
+      const v = votes[o]||0;
+      const pct = total > 0 ? Math.round(v/total*100) : 0;
+      const isMyVote = alreadyVoted === o;
+      return `<div class="poll-bar-wrap">
+        <div class="poll-bar-label">
+          <span style="${isMyVote?'color:#a78bfa;font-weight:700;':''}">
+            ${isMyVote?'✓ ':''}${escHtml(o)}
+          </span>
+          <span>${pct}%</span>
+        </div>
+        <div class="poll-bar-track"><div class="poll-bar-fill" style="width:${pct}%"></div></div>
+      </div>`;
+    }).join('');
+    html += `<div class="poll-total">📊 ${total} vote${total!==1?'s':''} · Vous avez voté pour <strong>${escHtml(alreadyVoted)}</strong></div>`;
+  } else {
+    html += options.map(o =>
+      `<button class="poll-vote-btn" onclick="pollVote('${active.id}','${escHtml(o).replace(/'/g,"\'")}')">
+        <span>${escHtml(o)}</span><span style="font-size:.75rem;color:#7878a0;">${votes[o]||0} vote${(votes[o]||0)!==1?'s':''}</span>
+      </button>`
+    ).join('');
+  }
+  html += '</div>';
+  container.innerHTML = html;
+
+  // Auto-refresh every 10s
+  clearInterval(_pollAutoRefreshTimer);
+  _pollAutoRefreshTimer = setInterval(renderActivePoll, 10000);
+}
+
+function pollVote(pollId, option){
+  const votedKey = 'poll_voted_' + pollId;
+  if(localStorage.getItem(votedKey)){ faToast('Vous avez déjà voté !'); return; }
+  const poll = pollDbGet(pollId);
+  if(!poll || poll.status !== 'active'){ faToast('Ce sondage est fermé.'); return; }
+  const votes = JSON.parse(poll.votes || '{}');
+  votes[option] = (votes[option]||0) + 1;
+  pollDbUpdate(pollId, { votes: JSON.stringify(votes) });
+  localStorage.setItem(votedKey, option);
+  faToast('✅ Vote enregistré !');
+  renderActivePoll();
 }
 
 function admClearLogs(){
