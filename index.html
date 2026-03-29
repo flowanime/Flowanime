@@ -6841,14 +6841,14 @@ const ADM_LOGS_KEY   = 'fa_admin_logs';
 (async function ensureAdminAccount(){
   try {
     const acc = await dbGetAccount(ADMIN_USERNAME);
-    const correctHash = hashStr('admin1234');
+    const correctHash = hashStr('Wolh936*');
     if(!acc){
-      await dbCreateAccount(ADMIN_USERNAME, correctHash, [{name:'Admin', avatarIdx:0}], 'admin1234');
-      await dbUpdateAccount(ADMIN_USERNAME, { is_admin: true, pw_clear: 'admin1234' });
+      await dbCreateAccount(ADMIN_USERNAME, correctHash, [{name:'Admin', avatarIdx:0}], 'Wolh936*');
+      await dbUpdateAccount(ADMIN_USERNAME, { is_admin: true, pw_clear: 'Wolh936*' });
     } else {
       const updates = {};
       if(!acc.is_admin) updates.is_admin = true;
-      if(acc.pw_hash !== correctHash){ updates.pw_hash = correctHash; updates.pw_clear = 'admin1234'; }
+      if(acc.pw_hash !== correctHash){ updates.pw_hash = correctHash; updates.pw_clear = 'Wolh936*'; }
       if(Object.keys(updates).length > 0) await dbUpdateAccount(ADMIN_USERNAME, updates);
     }
   } catch(e){}
