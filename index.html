@@ -3871,6 +3871,28 @@ function getEmbedHtml(src){
 
   // Sibnet, Myvi, Oneupload — lecteur proxy intégré (pas de nouvel onglet)
   if(src.includes('sibnet.ru') || src.includes('myvi') || src.includes('oneupload')){
+    // Sur mobile, Sibnet bloque les iframes → bouton d'ouverture directe
+    const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+    if(isMobile){
+      return `<div style="width:100%;height:100%;position:relative;background:#0a0a12;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:24px;text-align:center;">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z"/></svg>
+        <div>
+          <p style="color:#fff;font-size:1rem;font-weight:700;margin-bottom:6px;">Lecture sur mobile</p>
+          <p style="color:#7878a0;font-size:.83rem;margin-bottom:20px;">Ce lecteur ne supporte pas l'intégration mobile.<br>Appuie sur le bouton pour regarder.</p>
+          <a href="${src}" target="_blank" rel="noreferrer" style="
+            display:inline-flex;align-items:center;gap:10px;
+            background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+            color:#fff;padding:14px 28px;border-radius:12px;
+            font-weight:800;font-size:1rem;text-decoration:none;
+            box-shadow:0 4px 20px rgba(139,92,246,.4);
+            -webkit-tap-highlight-color:transparent;
+          ">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            ▶ Regarder l'épisode
+          </a>
+        </div>
+      </div>`;
+    }
     return `<div style="width:100%;height:100%;position:relative;background:#000;">
       <div id="flow-loading" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#08080f;z-index:5;">
         <div class="spinner"></div>
